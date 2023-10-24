@@ -1,0 +1,28 @@
+### Get Tasks Request
+GET http://localhost:8080/api/tasks
+Accept: application/json
+
+### Get Task By Id Request
+GET http://localhost:8080/api/tasks/47ed62d3-d198-4fc5-a058-427a85a23735
+Accept: application/json
+
+### Create Task Request
+POST http://localhost:8080/api/tasks:create
+Content-Type: application/json
+
+{
+    "title": "Task Title",
+    "description": "Task Description"
+}
+
+### Update Task Request
+PUT http://localhost:8080/api/tasks:update/47ed62d3-d198-4fc5-a058-427a85a23735
+Content-Type: application/json
+
+{
+    "title": "New Task Title",
+    "description": "New Task Description"
+}
+
+### Delete Task Request
+DELETE http://localhost:8080/api/tasks:delete/47ed62d3-d198-4fc5-a058-427a85a23735
